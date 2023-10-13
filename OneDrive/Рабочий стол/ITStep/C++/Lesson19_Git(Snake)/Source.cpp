@@ -144,7 +144,7 @@ void MainSnake(COORD snake[], int size, char symbol,int width, int height, COORD
 				cout << "Game over!";
 				break;
 			}
-			Sleep(300);
+			Sleep(100);
 	}
 
 }
