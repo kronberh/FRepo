@@ -31,7 +31,7 @@ int main()
 
 	COORD start = { 40,5 };/////координати початку грального вікна
 
-	int width = 40, height = 20;/////////параметри грального вікна
+	int width = 60, height = 30;/////////параметри грального вікна
 	ShowWindow(width, height,start);
 
 
