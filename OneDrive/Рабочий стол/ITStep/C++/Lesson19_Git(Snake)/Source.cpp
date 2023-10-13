@@ -41,7 +41,7 @@ int main()
 	COORD snake[size] = { tail,head };/////спочатку масив змійки містить тільки голову та хвіст
 
 	//char symbol = 219;
-	char symbol = '*';
+	char symbol = '@';
 
 	
 
@@ -70,7 +70,7 @@ void MainSnake(COORD snake[], int size, char symbol,int width, int height, COORD
 
 	int x = 1, y = 0;
 	COORD food=SetFood(  width, height, start);
-	TypeFood(food,  '@');
+	TypeFood(food,  '*');
 	while (true)
 	{
 	
@@ -116,7 +116,7 @@ void MainSnake(COORD snake[], int size, char symbol,int width, int height, COORD
 				snake[count - 1] = snake[count - 2];
 				
 			 food = SetFood( width, height, start);
-				TypeFood(food, '@');
+				TypeFood(food, '*');
 		    }
 			else
 			{
