@@ -31,13 +31,13 @@ int main()
 
 	COORD start = { 40,5 };/////координати початку грального вікна
 
-	int width = 40, height = 20;/////////параметри грального вікна
+	const int width = 40, height = 20;/////////параметри грального вікна
 	ShowWindow(width, height,start);
 
 
 	COORD head = { start.X + width / 2, start.Y + height / 2 };
 	COORD tail = { head.X - 1, head.Y };
-	const int size = 10;///////максимальний розмір змійки
+	const int size = width * height;///////максимальний розмір змійки
 	COORD snake[size] = { tail,head };/////спочатку масив змійки містить тільки голову та хвіст
 
 	//char symbol = 219;
